@@ -23,6 +23,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Bootstrap to start making it pretty
 gem 'bootstrap', '~> 4.0.0.alpha5'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
