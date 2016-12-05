@@ -1,0 +1,9 @@
+.navbar-dark {
+	.navbar-nav .btn a {
+		color: $navbar-dark-color;
+		&:hover {
+			text-decoration: none;
+			color: $navbar-dark-hover-color;
+		}
+	}
+}

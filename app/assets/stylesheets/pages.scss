@@ -2,9 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.navbar-brand {
+	font-family: 'Bungee', sans-serif;
+}
+
 .jumbotron-home {
-    background-image: url(image_path('home-bg.jpg'));
+    //background-image: url(image_path('home-bg.jpg'));
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+    color: #fff;
 }
