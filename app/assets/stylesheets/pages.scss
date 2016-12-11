@@ -6,8 +6,16 @@
 	font-family: 'Bungee', sans-serif;
 }
 
+.container {
+	padding: 1em 0;
+}
+
+.jumbotron {
+	border-radius: 0;
+}
+
 .jumbotron-home {
-    //background-image: url(image_path('home-bg.jpg'));
+    background-image: url(image_path('space-bg-min.jpg'));
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -20,4 +28,22 @@
 
 .alert {
 	margin-bottom: 0;
+}
+
+.callout {
+	background: $brand-primary;
+	color: #fff;
+	padding: 1em;
+}
+
+footer {
+	background: $gray-dark;
+	color: #fff;
+	width: 100%;
+	a {
+		color: #fff;
+	}
+	a:hover {
+		color: $brand-primary;
+	}
 }

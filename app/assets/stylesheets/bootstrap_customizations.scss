@@ -18,13 +18,13 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 #2C3E50;
+$gray-dark:                 #0c0c0c;
 $gray:                      #55595c;
 $gray-light:                #818a91;
 $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
-$brand-primary:             #D53F5A;
+$brand-primary:             #5A6BD8;
 $brand-success:             #5cb85c;
 $brand-info:                #5bc0de;
 $brand-warning:             #f0ad4e;
@@ -36,7 +36,7 @@ $brand-inverse:             $gray-dark;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-rounded:            false;
+$enable-rounded:            true;
 $enable-shadows:            false;
 $enable-gradients:          false;
 $enable-transitions:        false;
@@ -114,7 +114,7 @@ $border-radius-sm:       .2rem;
 
 // Navbar
 
-$navbar-border-radius:              $border-radius;
+$navbar-border-radius:              0;
 $navbar-padding-x:                  $spacer;
 $navbar-padding-y:                  ($spacer / 2);
 $navbar-brand-padding-y:            .25rem;
