@@ -4,4 +4,6 @@ class User < ApplicationRecord
   # removed :recoverable until mailer is setup
   devise :database_authenticatable, :registerable,
          :rememberable, :trackable, :validatable
+
+  has_many :tweets
 end
