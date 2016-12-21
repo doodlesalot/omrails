@@ -19,6 +19,7 @@
           <ul class="nav navbar-nav">
             <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
             <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
+            <li class="nav-item"><%= link_to "Wants", wants_path, class: "nav-link" %></li>
             <li class="nav-item"><%= link_to "Contact", contact_us_path, class: "nav-link" %></li>
             <% if user_signed_in? %>
             <li class="nav-item float-xs-right"><%= link_to "Logout", signout_path, method: :delete, class: "nav-link" %></li>
