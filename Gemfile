@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Bootstrap to start making it pretty
 gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'font-awesome-sass'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end

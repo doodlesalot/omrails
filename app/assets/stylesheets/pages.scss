@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$grey: #ecf0f1;
+$gold: #f9e79f;
+$light-teal: #76d7c4;
+$dark-teal: #48c9b0;
+$light-blue: #3498db;
+$dark-blue: #2980b9;
+
 .navbar-brand {
 	font-family: 'Bungee', sans-serif;
 }
@@ -34,6 +41,30 @@
 	background: $brand-primary;
 	color: #fff;
 	padding: 1em;
+}
+
+.title-area {
+	margin-bottom: 1em;
+}
+
+h1.page-title {
+    display: inline-block;
+    //margin: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+a.btn.btn-primary.float-xs-right.new {
+    margin-top: 8px;
+    margin-bottom: 1em;
+}
+
+.card.card-block {
+    border-color: $dark-blue;
+}
+
+.card-block i {
+    margin: 0.8em 1em 0 0;
 }
 
 footer {

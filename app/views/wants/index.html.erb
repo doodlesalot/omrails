@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="title-area">
+    <h1 class="page-title">Wants</h1> 
+    <% if user_signed_in? %>
+    <%= link_to 'New Want', new_want_path, class: 'btn btn-primary float-xs-right new' %>
+    <% end %>
+  </div>
+
+  <div class="row">
+      <% @wants.each do |want| %>
+        <div class="col-sm-6">
+          <div class="card card-block">
+            <h4 class="card-title"><%= want.title %></h4>
+            <p class="card-text"><%= want.summary %></p>
+            <td><%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_want_path(want), class: 'float-xs-left' %></td>
+            <td><%= link_to '<i class="fa fa-trash" aria-hidden="true"></i>'.html_safe, want, method: :delete, data: { confirm: 'Don\'t want it anymore?' }, class: 'float-xs-left' %></td>
+            <%= link_to 'More info', want, class: 'card-link btn btn-info float-xs-right' %>
+          </div>
+        </div>
+      <% end %>
+  </div>
+
+  <br>
+
+</div>

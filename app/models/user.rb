@@ -6,4 +6,5 @@ class User < ApplicationRecord
          :rememberable, :trackable, :validatable
 
   has_many :tweets
+  has_many :wants
 end
