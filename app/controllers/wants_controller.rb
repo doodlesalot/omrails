@@ -1,6 +1,6 @@
 class WantsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_want, only: [:show, :edit, :update, :destroy]
+  before_action :set_want, only: [:edit, :update, :destroy]
 
   # GET /wants
   def index
@@ -9,6 +9,7 @@ class WantsController < ApplicationController
 
   # GET /wants/1
   def show
+    @want = Want.find(params[:id])
   end
 
   # GET /wants/new

@@ -9,13 +9,17 @@
   <div class="row">
       <% @wants.each do |want| %>
         <div class="col-sm-6">
+          <%= link_to want do %>
           <div class="card card-block">
+            
             <h4 class="card-title"><%= want.title %></h4>
             <p class="card-text"><%= want.summary %></p>
             <td><%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_want_path(want), class: 'float-xs-left' %></td>
             <td><%= link_to '<i class="fa fa-trash" aria-hidden="true"></i>'.html_safe, want, method: :delete, data: { confirm: 'Don\'t want it anymore?' }, class: 'float-xs-left' %></td>
             <%= link_to 'More info', want, class: 'card-link btn btn-info float-xs-right' %>
+            
           </div>
+          <% end %>
         </div>
       <% end %>
   </div>
