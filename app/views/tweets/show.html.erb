@@ -3,7 +3,7 @@
 
 	<p>
 	  <strong>User:</strong>
-	  <%= @tweet.user %>
+	  <%= link_to @tweet.user.username, user_path(@tweet.user.username) %>
 	</p>
 
 	<p>
