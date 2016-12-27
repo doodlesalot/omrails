@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @tab.user %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @tab.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @tab.content %>
+</p>
+
+<%= link_to 'Edit', edit_tab_path(@tab) %> |
+<%= link_to 'Back', tabs_path %>

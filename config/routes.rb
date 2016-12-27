@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tabs
   get 'users/:username', to: 'users#show', as: 'user'
 
   resources :items
