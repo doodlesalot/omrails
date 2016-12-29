@@ -78,6 +78,14 @@ span.vote_count {
     padding-top: 1.25rem;
 }
 
+a.downvote, a.upvote {
+    position: absolute;
+    top: 1.4em;
+    right: 0.6em;
+    padding-top: 1.25rem;
+    font-size: 1.2em;
+}
+
 footer {
 	background: $gray-dark;
 	color: #fff;

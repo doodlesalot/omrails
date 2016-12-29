@@ -17,10 +17,13 @@
             <span class="vote_count">
               <%= want.votes_for.up.size %><br><small>Votes</small>
             </span>
-            <span class="vote">
-            <%= link_to 'Vote', vote_want_path(want), method: :post %>
-            <%= link_to 'Unvote', unvote_want_path(want), method: :delete %>
-            </span>
+            <% if user_signed_in? %>
+              <% if current_user.voted_up_on? want %>
+                <%= link_to '<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>'.html_safe, unvote_want_path(want), method: :delete, class: "downvote" %>
+              <% else %>
+                <%= link_to '<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>'.html_safe, vote_want_path(want), method: :post, class: "upvote" %>
+              <% end %>
+            <% end %>
             <td><%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_want_path(want), class: 'float-xs-left' %></td>
             <td><%= link_to '<i class="fa fa-trash" aria-hidden="true"></i>'.html_safe, want, method: :delete, data: { confirm: 'Don\'t want it anymore?' }, class: 'float-xs-left' %></td>
             <%= link_to 'More info', want, class: 'card-link btn btn-info float-xs-right' %>
