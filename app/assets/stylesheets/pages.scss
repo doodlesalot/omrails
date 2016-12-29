@@ -67,6 +67,17 @@ a.btn.btn-primary.float-xs-right.new {
     margin: 0.8em 1em 0 0;
 }
 
+span.vote_count {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    line-height: 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 1.25rem;
+}
+
 footer {
 	background: $gray-dark;
 	color: #fff;

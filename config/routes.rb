@@ -3,7 +3,13 @@ Rails.application.routes.draw do
   get 'users/:username', to: 'users#show', as: 'user'
 
   resources :items
-  resources :wants
+  resources :wants do
+    member do
+      post 'vote', to: 'votes#create'
+      delete 'unvote', to: 'votes#destroy'
+    end
+  end
+
   resources :tweets
   ActiveAdmin.routes(self)
   devise_for :users
